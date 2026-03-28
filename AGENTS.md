@@ -42,7 +42,8 @@ python -m tennis_betting.cli --input data/raw/*.xlsx --model logreg --odds-sourc
 ## Repo Rules
 
 - Treat all modeling and backtesting as strictly chronological. Do not introduce future leakage.
-- Keep `data/raw/` and `data/processed/` out of commits except for `.gitkeep`.
+- Keep generated files in `data/processed/` out of commits except for `.gitkeep`.
+- The current seed training dataset in `data/raw/` is committed intentionally so new server clones can run immediately.
 - Do not commit `__pycache__`, temp folders, or machine-local artifacts.
 - Prefer updating tests when changing loader, model, or settlement logic.
 - Keep the CLI usable as the main entrypoint for research runs.

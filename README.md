@@ -61,6 +61,7 @@ It looks for these columns:
 
 Rows with `Comment` other than blank or `Completed` are excluded by default.
 Legacy `.xls` files are not supported yet.
+The repo currently includes seed ATP/WTA `2024-2026` season files in `data/raw/` so a fresh server clone can backtest immediately.
 
 ## Models
 
